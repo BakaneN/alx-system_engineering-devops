@@ -3,8 +3,5 @@
 # get apache to run on container and return Hello Alx when querying the root
 # fix issue on docker container
 
-sudo apt-get update -y
-sudo apt-get install -y apache2
-sudo /etc/init.d/apache2 start
-echo "Hello Alx" | sudo tee -a /var/www/html/index.html
-sudo /etc/init.d/apache2 restart
+sudo service apache2 start
+
